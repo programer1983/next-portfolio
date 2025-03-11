@@ -6,6 +6,7 @@
     --montseratFont: "Montserrat", sans-serif;
     --robotoFonts: "Roboto", sans-serif;
     --whiteColor: #fff;
+    --blackColor: #000;
 }
 
 * {
@@ -92,6 +93,7 @@ h6 {
 
 body{
     font-family: var(--robotoFonts);
+    background-color: var(--blackColor);
 }
 
 

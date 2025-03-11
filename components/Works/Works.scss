@@ -1,0 +1,39 @@
+.works__items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.25rem;
+    row-gap: 2.5rem;
+}
+
+.works__item{
+}
+
+.works__card{
+   overflow: hidden;
+   border-radius: 0.625rem;
+   margin-bottom: 0.9375rem;
+}
+
+.works__link{
+    display: block;
+}
+
+.works__image{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform .3s ease;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+.work__text{
+    color: var(--whiteColor);
+    font-size: 1.375rem;
+    text-align: center;
+    width: 20rem;
+    height: auto;
+    margin: 0 auto;
+    line-height: 1.2;
+}

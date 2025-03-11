@@ -1,8 +1,7 @@
 .scills__list{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: space-around; 
 }
 
 .scills__list-item{
@@ -14,6 +13,10 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+    transition: transform .3s ease;
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 
 .scills__list-name{

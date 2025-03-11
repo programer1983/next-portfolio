@@ -1,0 +1,29 @@
+.header{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.534);
+    width: 100%;
+    padding: 0.9375rem 0;
+    z-index: 2;
+}
+
+.header__list{
+    display: flex;
+    align-items: center;
+    column-gap: 12.5rem;
+}
+
+.header__item{
+    border-bottom: 1px solid transparent;
+    transition: border-color .3s ease;
+    &:hover{
+        border-color: var(--whiteColor);
+    }
+}
+
+.header__link{
+    color: var(--whiteColor);
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: var(--montseratFont);
+}

@@ -1,3 +1,4 @@
+
 export const headerData = [
     {
         name: 'Про мене',
@@ -5,15 +6,15 @@ export const headerData = [
     },
     {
         name: 'Мої роботи',
-        path: '#scils',
+        path: '#scills',
     },
     {
         name: 'Мої технології',
-        path: '#work',
+        path: '#works',
     },
     {
         name: 'Контакти',
-        path: '#contact',
+        path: '#contacts',
     },
 ]
 

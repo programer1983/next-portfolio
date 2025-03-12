@@ -5,6 +5,13 @@
     background-position: center center;
     height: 43.75rem;
     position: relative;
+    @media (max-width: 800px){
+        height: 31.25rem;
+    }
+}
+
+.hero__content-inner{
+    padding: 0 10px 0 10px;
 }
 
 .hero__content{
@@ -16,6 +23,13 @@
    padding: 2.8125rem 0.625rem;
    border-radius: 1.25rem;
    max-width: 710px;
+   @media (max-width: 1200px){
+      width: 100%;
+   }
+   @media (max-width: 800px){
+      width: 80%;
+      margin-top: 3.75rem;
+   }
 }
 
 .hero__title{
@@ -24,6 +38,10 @@
     font-weight: 600;
     text-align: center;
     margin-bottom: 1.875rem;
+    @media (max-width: 800px){
+        font-size: 3.125rem;
+        margin-bottom: 1.25rem;
+    }
 }
 
 .hero__text{
@@ -32,4 +50,7 @@
     color: var(--whiteColor);
     line-height: 1.2;
     text-align: center;
+    @media (max-width: 800px){
+        font-size: 1.5625rem;
+    }
 }

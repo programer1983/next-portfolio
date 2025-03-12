@@ -1,9 +1,18 @@
+'use client';
+
+
+import { useState } from 'react'
 import { headerData } from '../../Data/header-data'
+import MobileMenu from '../MobileMenu/MobileMenu'
 import './Header.scss'
 
+
 const Header = () => {
+    const [activeMenu, setActiveMenu] = useState(false)
+
   return (
     <header className='header'>
+        <MobileMenu activeMenu={activeMenu}/>
         <div className="container">
             <div className="header__inner">
                 <ul className="header__list">
@@ -13,9 +22,14 @@ const Header = () => {
                     </li>
                 ))}
                 </ul>
+                <div 
+                    className={`header__burger ${activeMenu ? 'active' : ''}`}
+                    onClick={() => setActiveMenu(!activeMenu)}
+                >
+                    <span></span>
+                </div>
             </div>
         </div>
-
     </header>
   )
 }

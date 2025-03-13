@@ -1,6 +1,5 @@
 'use client';
 
-
 import About from "../../components/About/About";
 import Contact from "../../components/Contact/Contact";
 import Hero from "../../components/Hero/Hero"
@@ -13,7 +12,12 @@ import 'aos/dist/aos.css';
 
 export default function Home() {
 
-  useEffect(() => {
+
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
+ useEffect(() => {
     const initAos = async () => {
         await import('aos')
         AOS.init({
@@ -26,6 +30,7 @@ export default function Home() {
     }
     initAos()
  }, [])
+
 
 
   return (

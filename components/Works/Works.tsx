@@ -4,13 +4,13 @@ import './Works.scss'
 
 const Works = () => {
   return (
-    <section className='works'>
+    <section className='works' id="works">
         <div className="container">
             <h2 className="works__title title">Деякі мої навчальні проекти</h2>
             <div className="works__items">
                 {workstData.map((data) => (
                     <article className='works__item' key={data.id}>
-                        <a href="" className='works__link'>
+                        <a href="" className='works__link' data-aos="flip-left">
                             <div className="works__card">
                                 <Image 
                                     src={data.src} 

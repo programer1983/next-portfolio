@@ -5,11 +5,11 @@ export const headerData = [
         path: '#about',
     },
     {
-        name: 'Мої роботи',
+        name: 'Мої технології',
         path: '#scills',
     },
     {
-        name: 'Мої технології',
+        name: 'Мої роботи',
         path: '#works',
     },
     {
